@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/tasks", routesTasks);
 try {
-  const PORT = process.env.PORT || 7000;
+  const PORT = process.env.PORT || 8000;
   app.listen(PORT, "0.0.0.0", () =>
     console.log("Server is running in PORT: " + PORT)
   );
